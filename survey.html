@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City-wise Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        html{
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);
+            background-position: center;
+            background-size: cover;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+            margin: 0;
+        }
+        .container {
+            max-width: 700px;
+            background: transparent;
+            padding: 20px;
+            margin-top:2% ;
+            margin-left: 27%;
+            box-shadow: 0px 0px 10px white;
+            border-radius: 8px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(3, 177, 3);
+        }
+        label {
+            font-weight: bold;
+            color: red;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: rgb(203, 203, 224);
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: rgb(7, 7, 57);
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: rgb(14, 14, 32);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 38%;
+}
+
+@media(max-width: 600px){
+    .footer-container {
+        margin-left: 10px;
+    }
+   .container {
+            max-width: 700px;
+            background: transparent;
+            padding: 20px;
+            margin-top:25% ;
+            margin-left: 0%;
+            box-shadow: 0px 0px 10px white;
+            border-radius: 8px;
+        }
+        .social-icons span{
+            font-size: 24px;
+        }
+        .footer-container p{
+            font-size: 20px;
+        }
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: white;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 30px;
+    transition: 0.3s ease;
+  
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+    </style>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo2.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-solid fa-rectangle-xmark" onclick="hidemenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="">CAREER</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-solid fa-bars" onclick="showmenu()"></i>
+            </nav>
+    <div class="container">
+        <h2>Survey Form</h2>
+    <form action="thank.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="employment">Employment Status:</label>
+        <select id="employment" name="employment" required>
+            <option value="">Select</option>
+            <option value="Employed">Employed</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Student">Student</option>
+            <option value="Self-employed">Self-employed</option>
+            <option value="Retired">Retired</option>
+        </select>
+
+        <button type="submit"    >Submit</button>
+    </form>
+   
+</section>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Saurav kumar | All Rights Reserved</p>
+        
+        <div class="social-icons">
+            <span>Follow Us:</span>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
